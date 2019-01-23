@@ -1,25 +1,17 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
+import Welcome from './components/Welcome'
+import ClassWelcome from './components/ClassWelcome'
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <p>React is not that hard</p>
+        {/* <Welcome name='chinedu' heroStyle="nedu"  /> */}
+        <Welcome name='Azimoh' heroStyle="zims">This is the chidren of the component</Welcome>
+        <ClassWelcome />
       </div>
     );
   }
